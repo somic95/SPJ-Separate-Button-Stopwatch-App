@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h3 {
+    padding-top: 5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 16px 24px;
+    padding: 14px;
+    border-radius: 15px;
+    font-weight: bold;
+    outline: 3px solid #fff;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%);
+}
+
+p span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    margin: 80px auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    outline: 8px solid #ffc0cb;
+    transition: 0.5s ease-in-out
+}
+
+.container:hover {
+    outline: 4px solid #fff;
+}
+
+#seconds, #hours, #minutes {
+    font-size: 24px;
+}
+
+button {
+    border-radius: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 180px;
+    margin: 10px;
+    padding: 5px 0;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+#button-start {
+    background: linear-gradient(225deg, #008000, #085108);
+}
+
+#button-start:hover {
+    background: linear-gradient(0deg, #008000, #085108);
+    outline: 1px solid #008000;
+}
+
+#button-stop {
+    background: linear-gradient(225deg, #ff0000 , #770000);
+}
+
+#button-stop:hover {
+    background: linear-gradient(0deg, #ff0000 , #770000);
+    outline: 1px solid #ff0000;
+}
+
+#button-reset {
+    margin-bottom: 48px;
+    background: linear-gradient(225deg, #d36200, #923614);
+}
+
+#button-reset:hover {
+    background: linear-gradient(0deg, #d36200, #923614);
+    outline: 1px solid #d36200;
+}
+
+.dynamicIsland {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+    background: #000;
+}
+
+.dynamicIsland:hover {
+    background: #ffc0cb;
+    cursor: pointer;
+}
+
+
